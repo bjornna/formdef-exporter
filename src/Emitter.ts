@@ -98,9 +98,9 @@ function createFulluQualifiedName(container: FormContainer): string {
     n.shift();
   }
 
-  const almostThere = n.join('___');
+  const almostThere = n.join(' ');
 
-  const finalResult = NameFixer.toUpperCamelCase(almostThere);
+  const finalResult = NameFixer.toConstantCase(almostThere);;
 
   return finalResult;
 }

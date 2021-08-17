@@ -1,6 +1,6 @@
 {
   "name": "formdef-exporter",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "An export tool for openEHR form definitions",
   "main": "lib/index.js",
   "bin": {

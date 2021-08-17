@@ -20,7 +20,7 @@ export class FormContainer implements FormId {
   }
   public addNode(node: FormDefinition, level = 0) {
     let name = level === 0 ? node.name : node.name + level;
-    name = NameFixer.toUpperCamelCase(name);
+    name = NameFixer.toConstantCase(name);
 
     if (this.nodes[name]) {
       this.addNode(node, level + 1);
@@ -36,7 +36,7 @@ export class FormContainer implements FormId {
   }
   public addChild(child: FormContainer, level = 0) {
     let name = level === 0 ? child.baseName : child.baseName + level;
-    name = NameFixer.toUpperCamelCase(name);
+    name = NameFixer.toConstantCase(name);
     if (this.children[name]) {
       this.addChild(child, level + 1);
     } else {

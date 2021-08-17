@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import yargs, { env } from 'yargs';
-import ora from 'ora';
+
 import { getFormDefinitionFromZipFile } from './commands/getFormDefinitionFromZipFile';
 import { FormDefinition } from './model/FormDefinition';
 import { FormDefSerializer } from './FormDefSerializer';
